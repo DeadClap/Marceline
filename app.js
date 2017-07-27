@@ -2,7 +2,7 @@ const komada = require('komada');
 
 var test = new komada.Client({
   ownerID: "195223544186142727",
-  prefix: "yd.",
+  prefix: "y.",
   clientOptions: {
     fetchAllMembers: true
   },
