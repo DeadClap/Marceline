@@ -12,7 +12,7 @@ var perms = new Komada.PermLevels()
   if (adminRole && msg.member.roles.has(adminRole)) return true
 })
 .addLevel(4, false, (client,msg) => {
-  if (msg.author.id === msg.guild.ownerID)
+  if (msg.author.id === msg.guild.ownerID) return true
 })
 .addLevel(10, false, (client,msg) => {
   if (msg.author.id === oID || eCFG.aditionalOwners.includes(msg.author.id)) return true
@@ -25,6 +25,7 @@ var test = new komada.Client({
   clientOptions: {
     fetchAllMembers: true
   },
+  permStructure: perms,
   cmdEditing: true,
   cmdLogging: true,
   extraCFG: eCFG
