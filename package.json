@@ -1,0 +1,16 @@
+{
+  "name": "YuriCub",
+  "version": "0.1.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris",
+  "license": "ISC",
+  "dependencies": {
+    "for-in": "^1.0.2",
+    "komada": "github:dirigeants/komada#indev",
+    "pm2": "^2.6.1"
+  }
+}
