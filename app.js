@@ -1,7 +1,7 @@
 const komada = require('komada');
  var eCFG = require('./extraCFG.json')
  var oID = "195223544186142727"
-var perms = new Komada.PermLevels()
+var perms = new komada.PermLevels()
 .addLevel(0, false, () => true)
 .addLevel(2, false, (client,msg) => {
   var modRole = msg.guild.roles.get(client.settingGateway.get(msg.guild.id).modRole)
